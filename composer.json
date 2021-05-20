@@ -11,7 +11,6 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.14",
         "aki/yii2-bot-telegram": "*"
     },
     "autoload": {
