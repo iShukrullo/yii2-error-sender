@@ -1,9 +1,10 @@
 {
     "name": "ishukrullo/errorsender",
     "description": "On Exception, sends exception title and content to set user.",
-    "type": "yii2-extension",
     "keywords": ["yii2","extension"," telegram"," error handler"," handle"," helper"," exception"," error-handling"," error-reporting"],
-    "license": "BSD-2-Clause",
+    "license": "BSD-3-Clause",
+    "type": "yii2-extension",
+    "minimum-stability":"stable",
     "authors": [
         {
             "name": "Shukrullo Ibrohimov",
