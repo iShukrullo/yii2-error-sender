@@ -10,9 +10,6 @@
             "email": "ishukrulloi@gmail.com"
         }
     ],
-    "require": {
-        "aki/yii2-bot-telegram": "*"
-    },
     "autoload": {
         "psr-4": {
             "ishukrullo\\errorsender\\": ""
