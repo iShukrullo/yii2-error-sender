@@ -1,5 +1,5 @@
 {
-    "name": "ishukrullo/yii2-errorsender",
+    "name": "ishukrullo/errorsender",
     "description": "On Exception, sends exception title and content to set user.",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"," telegram"," error handler"," handle"," helper"," exception"," error-handling"," error-reporting"],
