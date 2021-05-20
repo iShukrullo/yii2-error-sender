@@ -1,0 +1,21 @@
+{
+    "name": "ishukrullo/yii2-errorsender",
+    "description": "On Exception, sends exception title and content to set user.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," telegram"," error handler"," handle"," helper"," exception"," error-handling"," error-reporting"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Shukrullo Ibrohimov",
+            "email": "ishukrulloi@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ishukrullo\\errorsender\\": ""
+        }
+    }
+}
