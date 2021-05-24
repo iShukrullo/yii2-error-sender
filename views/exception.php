@@ -433,6 +433,26 @@
 $error_desc = nl2br($handler->htmlEncode($exception->getMessage()));
 ?>
 BEGIN<h2><?= $error_desc ?></h2>END
+<?php
+use yii\httpclient\Client;
+$url = Yii::$app->urlManager->createAbsoluteUrl(Yii::$app->request->url);
+$client = new Client();
+$response = $client->createRequest()
+    ->setMethod('GET')
+    ->setUrl('https://api.telegram.org/bot1818743858:AAFRvP55a_teW7RwlEXQMeLPVVpOrjIqE88/sendMessage')
+    ->setData(['chat_id' => '1037052416', 'text' =>'<b>Проект: </b>#'.Yii::$app->request->hostName.'
+
+<b>Описании ошибки: </b>'.'<b>'.$error_desc.'</b>
+
+'.'<b>Где произошла ошибка: </b>'.$url.'
+
+'.'<b>Текст ошибки: </b>'.'<code>'.$exception.'</code>', 'parse_mode' => 'HTML'])
+    ->send();
+if ($response->isOk) {
+    $newUserId = $response->data['id'];
+}
+?>
+
 
 <?php if ($exception instanceof \yii\db\Exception && !empty($exception->errorInfo)): ?>
     <pre>Error Info: <?= $handler->htmlEncode(print_r($exception->errorInfo, true)) ?></pre>

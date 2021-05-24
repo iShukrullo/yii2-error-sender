@@ -1,7 +1,7 @@
 Send exceptions to telegram user.
 =================================
-On Exception, sends exception title and content to set user.
-
+On Exception, sends exception title and content to set telegram user.
+To get errors, first you need to hit start on bot [ErrorGetterBot](https://t.me/ErrorGetterBot)
 Installation
 ------------
 
