@@ -1,6 +1,6 @@
 <?php
 
-namespace ishukrullo\errorsender\temp;
+namespace ishukrullo\errorsender;
 
 use yii\web\ErrorHandler;
 
