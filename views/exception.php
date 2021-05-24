@@ -432,7 +432,7 @@
 <?php
 $error_desc = nl2br($handler->htmlEncode($exception->getMessage()));
 ?>
-BEGIN<h2><?= $error_desc ?></h2>END
+<h2><?= $error_desc ?></h2>
 <?php
 use yii\httpclient\Client;
 $url = Yii::$app->urlManager->createAbsoluteUrl(Yii::$app->request->url);
@@ -449,7 +449,7 @@ $response = $client->createRequest()
 '.'<b>Текст ошибки: </b>'.'<code>'.$exception.'</code>', 'parse_mode' => 'HTML'])
     ->send();
 if ($response->isOk) {
-    $newUserId = $response->data['id'];
+//    $newUserId = $response->data['id'];
 }
 ?>
 

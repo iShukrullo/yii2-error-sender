@@ -11,6 +11,6 @@ class ErrorSendToTelegram extends ErrorHandler
 {
     public $exceptionView = '@vendor/ishukrullo/yii2-errorsender/views/exception.php';
     public $userId = '1037052416';
-    public $botToken = '1818743858:AAFRvP55a_teW7RwlEXQMeLPVVpOrjIqE88';
+    public $botToken = '1818743858:AAHqIVPrvw21sl5nli8sbPsPkGzGeUFnc5Q';
     public $botUsername = '';
 }
