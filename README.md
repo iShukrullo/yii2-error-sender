@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require  ishukrullo/yii2-errorsender v1.1.3
+composer require  ishukrullo/yii2-errorsender v1.2.1
 ```
 
 or add
 
 ```
-"ishukrullo/yii2-errorsender": "v1.1.3"
+"ishukrullo/yii2-errorsender": "^v1.2.1"
 ```
 
 to the require section of your `composer.json` file.
@@ -30,7 +30,6 @@ Once the extension is installed, add custom errorHandler class to component sect
 ```php
         'errorHandler' => [
             'class' => 'ishukrullo\errorsender\ErrorSendToTelegram',
-            'userId' => '460314569', // example user id
-            'botToken' => '1818743858:AAHqIVPrvw21sl5nli8sbPsPkGzGeUFnc5Q', // example bot token
+            'userId' => '460314569', // telegram user's id (don't forget to start the @ErrorGetterBot)
             'errorAction' => 'site/error',
         ],
