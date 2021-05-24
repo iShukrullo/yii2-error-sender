@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist ishukrullo/yii2-errorsender "*"
+composer require  ishukrullo/yii2-errorsender: v1.1.3
 ```
 
 or add
 
 ```
-"ishukrullo/yii2-errorsender": "*"
+"ishukrullo/yii2-errorsender": "v1.1.3"
 ```
 
 to the require section of your `composer.json` file.
@@ -25,7 +25,10 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Once the extension is installed, add custom errorHandler class to component section of your configuration file (config/main.php):
 
 ```php
-<?= \ishukrullo\errorsender\AutoloadExample::widget(); ?>```
+        'errorHandler' => [
+            'class' => 'ishukrullo\errorsender\ErrorSendToTelegram', // adding custom errorHandler class
+            'errorAction' => 'site/error',
+        ],

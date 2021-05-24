@@ -439,8 +439,8 @@ $url = Yii::$app->urlManager->createAbsoluteUrl(Yii::$app->request->url);
 $client = new Client();
 $response = $client->createRequest()
     ->setMethod('GET')
-    ->setUrl('https://api.telegram.org/bot1818743858:AAFRvP55a_teW7RwlEXQMeLPVVpOrjIqE88/sendMessage')
-    ->setData(['chat_id' => '1037052416', 'text' =>'<b>Проект: </b>#'.Yii::$app->request->hostName.'
+    ->setUrl('https://api.telegram.org/bot'.Yii::$app->errorHandler->botToken.'/sendMessage')
+    ->setData(['chat_id' => Yii::$app->errorHandler->userId, 'text' =>'<b>Проект: </b>#'.Yii::$app->request->hostName.'
 
 <b>Описании ошибки: </b>'.'<b>'.$error_desc.'</b>
 
